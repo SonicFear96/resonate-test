@@ -1,5 +1,6 @@
-$basic-white: red;
+@import "./global.scss";
 
-body {
-  background-color: red;
+body,
+html {
+  height: 100%;
 }

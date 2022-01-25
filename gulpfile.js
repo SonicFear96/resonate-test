@@ -33,6 +33,11 @@ function scss() {
 function clear() {
   return del("dist");
 }
+
+function image() {
+  return src("src/img/**/*.{png,jpg,svg}").pipe(dest("dist/img"));
+}
+
 function serve() {
   sync.init({
     server: "./dist",
@@ -42,5 +47,5 @@ function serve() {
   watch("src/scss/**.scss", series(scss)).on("change", sync.reload);
 }
 
-exports.build = series(clear, scss, html);
-exports.start = series(clear, scss, html, serve);
+exports.build = series(clear, scss, html, image);
+exports.start = series(clear, scss, html, image, serve);
