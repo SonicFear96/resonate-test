@@ -25,7 +25,7 @@
   color: white;
 }
 
-button:hover {
+.item-button:hover {
   background-color: $light-blue-hover;
 }
 
@@ -34,6 +34,9 @@ button:hover {
 }
 .list__item.dark-blue .item-button {
   background-color: $dark-blue;
+}
+.list__item.dark-blue .item-button:hover {
+  background-color: $dark-blue-hover;
 }
 .list__item.dark-blue .button-rubric {
   background-color: $dark-blue;
