@@ -1,6 +1,14 @@
 @import "./global.scss";
-
+@import "./blocks/hero.scss";
 body,
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1180px;
+  height: 100%;
+  margin: 0 auto;
 }
