@@ -6,12 +6,12 @@ const del = require("del");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const sync = require("browser-sync").create();
-const gulp = require("gulp");
-const ghPages = require("gulp-gh-pages");
+const ghPages = require("gh-pages");
+const path = require("path");
 
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(ghPages());
-});
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), "./dist"), cb);
+}
 
 function html() {
   return src("src/**.html")
@@ -55,3 +55,4 @@ function serve() {
 
 exports.build = series(clear, scss, html, image);
 exports.start = series(clear, scss, html, image, serve);
+exports.deploy = deploy;

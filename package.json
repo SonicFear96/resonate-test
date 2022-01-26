@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,15 +17,15 @@
   "bugs": {
     "url": "https://github.com/SonicFear96/resonate-test/issues"
   },
-  "homepage": "https://github.com/SonicFear96/resonate-test#readme",
+  "homepage": "https://sonicfear96.github.io/resonate-test/",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.0"
