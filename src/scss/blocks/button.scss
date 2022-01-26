@@ -1,14 +1,70 @@
+.button {
+  font-family: "Noto Sans";
+}
+
 .item-button {
   width: 160px;
   height: 40px;
   background-color: $light-blue;
   border: none;
   color: white;
-  font-family: "Noto Sans";
   font-size: 13px;
   line-height: 20px;
 }
 
+.button-rubric {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  text-transform: uppercase;
+  padding: 6px 27px 8px 27px;
+  font-size: 13px;
+  line-height: 22px;
+  background-color: $light-blue;
+  border: none;
+  color: white;
+}
+
 button:hover {
   background-color: $light-blue-hover;
+}
+
+.list__item.dark-blue .item-tag {
+  color: $dark-blue;
+}
+.list__item.dark-blue .item-button {
+  background-color: $dark-blue;
+}
+.list__item.dark-blue .button-rubric {
+  background-color: $dark-blue;
+}
+
+.list__item.dark-blue .item-button:hover {
+  background-color: $dark-blue-hover;
+}
+
+@media (max-width: $tablet) {
+  .item-button {
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media (max-width: $MD) {
+  .item-button {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $LG) {
+  .item-button {
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 20px;
+  }
 }

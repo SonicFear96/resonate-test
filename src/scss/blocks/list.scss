@@ -9,6 +9,7 @@
 }
 
 .list__item {
+  position: relative;
   width: 30.5%;
   height: 500px;
   border: 1px solid #d3d8e4;
@@ -16,17 +17,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-}
-
-.list__item.dark-blue .item-tag {
-  color: $dark-blue;
-}
-.list__item.dark-blue .item-button {
-  background-color: $dark-blue;
-}
-
-.list__item.dark-blue .item-button:hover {
-  background-color: $dark-blue-hover;
 }
 
 @media (max-width: $mobile-width-only) {
