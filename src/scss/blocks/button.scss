@@ -1,0 +1,14 @@
+.item-button {
+  width: 160px;
+  height: 40px;
+  background-color: $light-blue;
+  border: none;
+  color: white;
+  font-family: "Noto Sans";
+  font-size: 13px;
+  line-height: 20px;
+}
+
+button:hover {
+  background-color: $light-blue-hover;
+}
