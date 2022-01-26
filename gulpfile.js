@@ -6,6 +6,12 @@ const del = require("del");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const sync = require("browser-sync").create();
+const gulp = require("gulp");
+const ghPages = require("gulp-gh-pages");
+
+gulp.task("deploy", function () {
+  return gulp.src("./dest/**/*").pipe(ghPages());
+});
 
 function html() {
   return src("src/**.html")
